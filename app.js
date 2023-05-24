@@ -15,10 +15,10 @@ const port = 3000;
 const embeddedPort = 3001;
 
 // Get the keys and certs for HTTPS.
-const key = fs.readFileSync('./ssl/www-key.pem');
-const cert = fs.readFileSync('./ssl/www-cert.pem');
-const embeddedKey = fs.readFileSync('./ssl/www2-key.pem');
-const embeddedCert = fs.readFileSync('./ssl/www2-cert.pem');
+const key = fs.readFileSync('./ssl/key.pem');
+const cert = fs.readFileSync('./ssl/cert.pem');
+const embeddedKey = fs.readFileSync('./ssl/key2.pem');
+const embeddedCert = fs.readFileSync('./ssl/cert2.pem');
 
 // Setup the outside app with the www folder as static content.
 app.use(express.static('www'));
